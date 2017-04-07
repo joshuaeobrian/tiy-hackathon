@@ -51,8 +51,19 @@
     text-align: center; }
 
 .container {
-  height: 400px;
-  background: grey; }
+  background: grey;
+  height: 250px;
+  width: 250px;
+  margin: auto; }
+  .container h1 {
+    text-align: center;
+    padding: 100px 75px 75px 75px; }
+
+.random {
+  border: 1px solid black;
+  margin: 0 25% 0 25%;
+  height: 40px;
+  width: 200px; }
 
 @font-face {
   font-family: chalkduster;

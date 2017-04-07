@@ -56,6 +56,72 @@
   }
 }
 .container {
-  height:400px;
-  background: grey;
+  background:grey;
+  height:250px;
+  width:250px;
+  margin:auto;
+  h1 {
+    text-align: center;
+    padding:100px 75px 75px 75px;
+  }
 }
+.random {
+  border: 1px solid black;
+  margin:0 25% 0 25%;
+  height:40px;
+  width:200px;
+}
+// .wheel {
+//   .slice1, .slice2, .slice3, .slice4, .slice5, .slice6, .slice7, .slice8 {
+//     float:left;
+//     border:1px solid black;
+//   }
+//   .slice1 {
+//     height:100px;
+//     width:100px;
+//     background:red;
+//   }
+//   .slice2 {
+//     height:100px;
+//     width:100px;
+//     background:blue;
+//   }
+//   .slice3 {
+//     height:100px;
+//     width:100px;
+//     background:green;
+//   }
+//   .slice4 {
+//     height:100px;
+//     width:100px;
+//     background:yellow;
+//   }
+//   .slice5 {
+//     height:100px;
+//     width:100px;
+//     background:red;
+//   }
+//   .slice6 {
+//     height:100px;
+//     width:100px;
+//     background:blue;
+//   }
+//   .slice7 {
+//     height:100px;
+//     width:100px;
+//     background:green;
+//   }
+//   .slice8 {
+//     height:100px;
+//     width:100px;
+//     background:black;
+//     color:white;
+//   }
+// }
+// button {
+//   height:30px;
+//   width:100px;
+//   border:1px solid black;
+//   border-radius:1em;
+//   margin:2%;
+// }
