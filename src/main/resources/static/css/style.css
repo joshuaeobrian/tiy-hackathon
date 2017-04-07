@@ -50,6 +50,62 @@
     color: white;
     text-align: center; }
 
+.container {
+  height: 400px;
+  background: grey; }
+
+@font-face {
+  font-family: chalkduster;
+  src: url("../fonts/src/main/resources/static/css/fonts/Chalkduster/Chalkduster.ttf"); }
+* {
+  font-family: 'chalkduster'; }
+
+.title-bar {
+  overflow: hidden;
+  background: #3C485E;
+  color: white;
+  text-align: center; }
+
+.player-bar {
+  background: #ECDCB0;
+  overflow: hidden;
+  text-align: center; }
+  .player-bar h1 {
+    line-height: .5; }
+
+.board {
+  background-image: url("../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png");
+  height: 100px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: hidden;
+  padding: 25px 15px 25px 15px; }
+
+.board-box {
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: .5em;
+  margin: 1%;
+  float: left; }
+  .board-box h1 {
+    margin: 0 auto;
+    color: white;
+    text-align: center; }
+
+.fill {
+  background: white;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: .5em;
+  margin: 1%;
+  float: left; }
+  .fill h1 {
+    margin: 0 auto;
+    color: white;
+    text-align: center; }
+
 .keyboard {
   background: #3C485E;
   height: 500px;
