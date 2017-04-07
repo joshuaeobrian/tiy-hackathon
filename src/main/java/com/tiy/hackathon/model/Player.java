@@ -12,9 +12,16 @@ public class Player {
     private String email;
     private String password;
     private boolean winner;
+<<<<<<< HEAD
 
 
     public Player() {
+=======
+    private Object bank;
+
+
+    public Player(String player, Bank bank) {
+>>>>>>> 90a4336a37d6f5ea5022ad28d74a0f6e86345cd1
     }
 
     public Player(Integer id, String firstName, String lastName, String userName, String email, String password) {
@@ -83,4 +90,11 @@ public class Player {
     public void setWinner(boolean winner) {
         this.winner = winner;
     }
+<<<<<<< HEAD
+=======
+
+    public Object getBank() {
+        return bank;
+    }
+>>>>>>> 90a4336a37d6f5ea5022ad28d74a0f6e86345cd1
 }
