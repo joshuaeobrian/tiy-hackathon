@@ -1,6 +1,6 @@
 @font-face {
   font-family: chalkduster;
-  src: url("../fonts/chalkduster.TTF"); }
+  src: url("../fonts/src/main/resources/static/css/fonts/Chalkduster/Chalkduster.ttf"); }
 * {
   font-family: 'chalkduster'; }
 
@@ -23,28 +23,43 @@
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
-  padding: 25px 0px 25px 10px; }
+  padding: 25px 15px 25px 15px; }
 
 .board-box {
-  height: 30px;
-  width: 30px;
+  height: 40px;
+  width: 40px;
   border: 1px solid white;
-  margin: 2.5%;
+  border-radius: .5em;
+  margin: 1%;
   float: left; }
   .board-box h1 {
     margin: 0 auto;
     color: white;
     text-align: center; }
 
+.fill {
+  background: white;
+  height: 40px;
+  width: 40px;
+  border: 1px solid white;
+  border-radius: .5em;
+  margin: 1%;
+  float: left; }
+  .fill h1 {
+    margin: 0 auto;
+    color: white;
+    text-align: center; }
+
 .keyboard {
   background: #3C485E;
-  height: 350px;
+  height: 500px;
   padding: 0px 0px 0px 20px; }
 
 .keyboard-box {
   height: 40px;
   width: 40px;
   border: 1px solid white;
+  border-radius: .5em;
   margin: 2%;
   float: left; }
   .keyboard-box h1 {
@@ -57,11 +72,24 @@
   height: 40px;
   width: 40px;
   border: 1px solid white;
+  border-radius: .5em;
   margin: 2%;
   float: left; }
   .used h1 {
     margin: 0 auto;
     color: lightgrey;
     text-align: center; }
+
+@media (min-width: 769px) {
+  body {
+    margin: 0% 36% 0% 36%; }
+
+  .board {
+    background-image: url("../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png");
+    height: 100px;
+    background-position: center center;
+    background-repeat: no-repeat;
+    overflow: hidden;
+    padding: 25px 25px 25px 25px; } }
 
 /*# sourceMappingURL=style.css.map */
