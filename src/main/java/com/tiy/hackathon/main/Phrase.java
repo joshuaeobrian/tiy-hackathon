@@ -1,24 +1,20 @@
-package com.tiy.hackathon.model;
+package com.tiy.hackathon.main;
 
 /**
- * Created by chrisaanerud on 4/6/17.
+ * Created by chrisaanerud on 4/7/17.
  */
-public class Game {
-
+public class Phrase {
     private Integer id;
+    private Integer categoryId;
     private String categoryType;
     private String phrase;
 
-    public Game() {
-    }
-
-    public Game(Integer id, String categoryType, String phrase) {
+    public Phrase(Integer id, Integer categoryId, String categoryType, String phrase) {
         this.id = id;
+        this.categoryId = categoryId;
         this.categoryType = categoryType;
         this.phrase = phrase;
-
     }
-
 
     public Integer getId() {
         return id;
@@ -26,6 +22,14 @@ public class Game {
 
     public void setId(Integer id) {
         this.id = id;
+    }
+
+    public Integer getCategoryId() {
+        return categoryId;
+    }
+
+    public void setCategoryId(Integer categoryId) {
+        this.categoryId = categoryId;
     }
 
     public String getCategoryType() {
