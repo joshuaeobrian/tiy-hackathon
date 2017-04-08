@@ -29,3 +29,11 @@ var divs = $('div[id^="content-"]').hide(),
 
 })();
   });
+
+$(".keyboard-box").click(function(e) {
+    const button = e.target;
+    const letter = button.textContent;
+    const div = button.parentNode;
+    div.className = "used";
+    console.log(div);
+});
