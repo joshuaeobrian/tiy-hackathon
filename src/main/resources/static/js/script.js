@@ -1,21 +1,4 @@
 
-// let container = document.getElementById('content');
-// const color = ['green','blue','red','grey'];
-//
-//
-// document.getElementById('rand').addEventListener('click',function() {
-//   x();
-// });
-//
-// const x = () =>{
-//    for(let i = 0; i < 1;i++){
-//     console.log(color[(Math.random() * color.length)]);
-//     setTimeout(1000);
-//     container.style.background = "";
-//     container.style.background =                    color[Math.floor(Math.random()*color.length)];
-//   }
-// };
-
 $('.random').click(function(){
 var divs = $('div[id^="content-"]').hide(),
     i = 0;
@@ -32,10 +15,26 @@ var divs = $('div[id^="content-"]').hide(),
   });
 
 $(".keyboard-box").click(function(e) {
+    e.preventDefault();
     const button = e.target;
     const letter = button.textContent;
     const div = button.parentNode;
-    div.className = "used";
-    console.log(div);
+	if(div.className.includes('used')){
+        alert('You have already pushed this button!')
+	}else{
+		div.className = "used";
+		$.post('http://requestb.in/12fc42b1',
+            {
+                guess: letter,
+
+            }
+        );
+    }
+
+
+
+
+
+
 });
 
