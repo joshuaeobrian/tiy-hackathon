@@ -4,88 +4,57 @@ package com.tiy.hackathon.model;
  * Created by chrisaanerud on 4/6/17.
  */
 public class Player {
+    private int id;
+    private String name;
+    private Integer winCount;
+    private Integer loseCount;
+    private Bank bank;
 
-    private Integer id;
-    private String firstName;
-    private String lastName;
-    private String userName;
-    private String email;
-    private String password;
-    private boolean winner;
-    private Object bank;
-
-
-    public Player(String player, Bank bank) {
+    public Player() {
     }
 
-    public Player(Integer id, String firstName, String lastName, String userName, String email, String password) {
+    public Player(String name, Bank bank) {
+        this.name = name;
+        this.bank = bank;
+    }
+
+    public Player(int id, String name, Integer winCount, Integer loseCount, Bank bank) {
         this.id = id;
-        this.firstName = firstName;
-        this.lastName = lastName;
-        this.userName = userName;
-        this.email = email;
-        this.password = password;
-        this.winner = false;
-
+        this.name = name;
+        this.winCount = winCount;
+        this.loseCount = loseCount;
+        this.bank = bank;
     }
 
-    public Integer getId() {
-        return id;
+    public String getName() {
+        return name;
     }
 
-    public void setId(Integer id) {
-        this.id = id;
+    public void setName(String name) {
+        this.name = name;
     }
 
-    public String getFirstName() {
-        return firstName;
+    public Integer getWinCount() {
+        return winCount;
     }
 
-    public void setFirstName(String firstName) {
-        this.firstName = firstName;
+    public void setWin() {
+        this.winCount += winCount;
     }
 
-    public String getLastName() {
-        return lastName;
+    public Integer getLoseCount() {
+        return loseCount;
     }
 
-    public void setLastName(String lastName) {
-        this.lastName = lastName;
+    public void setLoseCount(Integer loseCount) {
+        this.loseCount = loseCount;
     }
 
-    public String getUserName() {
-        return userName;
-    }
-
-    public void setUserName(String userName) {
-        this.userName = userName;
-    }
-
-    public String getEmail() {
-        return email;
-    }
-
-    public void setEmail(String email) {
-        this.email = email;
-    }
-
-    public String getPassword() {
-        return password;
-    }
-
-    public void setPassword(String password) {
-        this.password = password;
-    }
-
-    public boolean isWinner() {
-        return winner;
-    }
-
-    public void setWinner(boolean winner) {
-        this.winner = winner;
-    }
-
-    public Object getBank() {
+    public Bank getBank() {
         return bank;
+    }
+
+    public int getId() {
+        return id;
     }
 }

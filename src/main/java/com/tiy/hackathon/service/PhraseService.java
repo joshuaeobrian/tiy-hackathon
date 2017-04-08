@@ -1,7 +1,6 @@
 package com.tiy.hackathon.service;
 
 import com.tiy.hackathon.controller.PhraseRepository;
-import com.tiy.hackathon.main.Phrase;
 
 /**
  * Created by chrisaanerud on 4/7/17.
@@ -9,12 +8,18 @@ import com.tiy.hackathon.main.Phrase;
 public class PhraseService {
 
     private PhraseRepository repository;
+    private Integer id;
 
-//    public PhraseService(){
+    public PhraseService(){
 //        repository = new PhraseRepository("jdbc:postgresql://localhost:5432/wheelophases");
-//    }
+    }
 
-    public Phrase getPhrase() throws Exception {
-        return repository.getPhrasesByCategory(2);
+    public String getPhrase() throws Exception {
+           //  return "This is the word";//repository.getPhrasesByCategory(2);
+        return getPhrase() ;
+    }
+
+    public Integer getId() {
+        return id;
     }
 }
