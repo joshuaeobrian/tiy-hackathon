@@ -1,22 +1,29 @@
 package com.tiy.hackathon.service;
 
 import com.tiy.hackathon.controller.PhraseRepository;
+import com.tiy.hackathon.model.PhraseCharacter;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.stereotype.Component;
+
+import java.util.Arrays;
+import java.util.List;
 
 /**
  * Created by chrisaanerud on 4/7/17.
  */
+@Component
 public class PhraseService {
-
-    private PhraseRepository repository;
+//    @Autowired
+//    private PhraseRepository repository;
     private Integer id;
 
-    public PhraseService(){
-        repository = new PhraseRepository("jdbc:postgresql://localhost/wheelophrases");
-    }
 
-    public String getPhrase() throws Exception {
+
+    public List<PhraseCharacter>getPhrase() {
            //  return "This is the word";//repository.getPhrasesByCategory(2);
-        return getPhrase() ;
+
+        List<PhraseCharacter> c = Arrays.asList(new PhraseCharacter("a"), new PhraseCharacter("d"), new PhraseCharacter("s"));
+        return c;
     }
 
     public Integer getId() {
