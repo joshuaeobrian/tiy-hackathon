@@ -51,19 +51,28 @@
     text-align: center; }
 
 .container {
-  background: grey;
-  height: 250px;
-  width: 250px;
-  margin: auto; }
-  .container h1 {
+  background: #3C485E;
+  overflow: hidden;
+  height: 350px; }
+
+.color-changer {
+  background: white;
+  height: 150px;
+  width: 150px;
+  margin: auto;
+  border-radius: 2em;
+  box-shadow: 10px 10px 5px #888888; }
+  .color-changer h1 {
     text-align: center;
-    padding: 100px 75px 75px 75px; }
+    padding: 50px 25px 50px 25px; }
 
 .random {
   border: 1px solid black;
+  border-radius: 2em;
   margin: 0 25% 0 25%;
   height: 40px;
-  width: 200px; }
+  width: 200px;
+  background: #ECDCB0; }
 
 @font-face {
   font-family: chalkduster;
