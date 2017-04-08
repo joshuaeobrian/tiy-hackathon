@@ -11,7 +11,7 @@ public class PhraseService {
     private Integer id;
 
     public PhraseService(){
-//        repository = new PhraseRepository("jdbc:postgresql://localhost:5432/wheelophases");
+        repository = new PhraseRepository("jdbc:postgresql://localhost/wheelophrases");
     }
 
     public String getPhrase() throws Exception {
