@@ -4,17 +4,27 @@ package com.tiy.hackathon.model;
  * Created by chrisaanerud on 4/8/17.
  */
 public class PhraseCharacter{
-    private String phraseChar;
+    private Integer phraseID;
+    private Character phraseChar;
 
-    public PhraseCharacter(String phraseChar) {
+    public PhraseCharacter(Integer phraseID,Character phraseChar) {
+        this.phraseID = phraseID;
         this.phraseChar = phraseChar;
     }
 
-    public String getPhraseChar() {
+    public Character getPhraseChar() {
         return phraseChar;
     }
 
-    public void setPhraseChar(String phraseChar) {
+    public void setPhraseChar(Character phraseChar) {
         this.phraseChar = phraseChar;
+    }
+
+    public Integer getPhraseID() {
+        return phraseID;
+    }
+
+    public void setPhraseID(Integer phraseID) {
+        this.phraseID = phraseID;
     }
 }

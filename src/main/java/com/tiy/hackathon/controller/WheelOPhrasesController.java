@@ -26,7 +26,8 @@ public class WheelOPhrasesController {
     @RequestMapping("/")
     public String listPhrases(Model model){
 
-        model.addAttribute("phrases", phraseService.getPhrase());
+        model.addAttribute("phraseChar", phraseService.getPhrase());
+        model.addAttribute("phraseInfo",phraseService.getPhraseInfo());
 
         return "index";
     }
