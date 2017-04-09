@@ -184,6 +184,7 @@
   border: 1px solid white;
   border-radius: .5em;
   margin: 2%;
+  background: none;
   float: left; }
   .keyboard-box h1 {
     margin: 0 auto;
