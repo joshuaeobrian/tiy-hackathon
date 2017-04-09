@@ -5,21 +5,21 @@ $(document).ready(function () {
 	const spinButton = document.getElementById('rand');
 	$('.container').hide();
 
-const spinWheel = () =>{
-	$('.keyboard').hide();
-	$('.container').show();
-}
+//const spinWheel = () =>{
+//	$('.keyboard').hide();
+//	$('.container').show();
+//}
 
 //work out toggle function
-	const bottomPanel = {
-		spinWheel: () =>{
-
-		},
-		keyboard: () =>{
-			$('.keyboard').show();
-			$('.container').hide();
-		}
-	};
+//	const bottomPanel = {
+//		spinWheel: () =>{
+//
+//		},
+//		keyboard: () =>{
+//			$('.keyboard').show();
+//			$('.container').hide();
+//		}
+//	};
 	//toggles user section
 	$(".title-bar").click(function () {
 		$(".player-bar").toggle("slow");
@@ -48,7 +48,7 @@ const spinWheel = () =>{
 			function (data) {
 				//parses string to json
 				let x = jQuery.parseJSON( data );
-				spinWheel();
+				//spinWheel();
 				//if letter is in phrase run for loop
 				if(x.isInPhrase){
 					//iterates through array of the class letters to find the right div
@@ -68,37 +68,42 @@ const spinWheel = () =>{
 	    }
 	});
 
-	spinButton.addEventListener("click", (e) =>{
-		const button = e.target;
-		console.log(button.textContent);
-
-		let divs = $('div[id^="content-"]').hide(),
-		    i = 0;
-		let toStop = false;
-		const action = {
-			Spin: () => {
-				console.log(button.textContent);
-				//button.textContent = 'Stop';
-				(function cycle() {
-					if(toStop === false) {
-						divs.eq(i).show(0)
-							.delay(200)
-							.hide(0, action[button.textContent]);
-
-						i = ++i % divs.length;
-					}else{
-
-					}
-
-				})();
-			},
-			Stop: () =>{
-				console.log(button.textContent);
-				//button.textContent = 'Spin';
-				toStop = true;
-			}
-		};
-		action[button.textContent]();
-	});
+	//spinButton.addEventListener("click", (e) =>{
+	//	const button = e.target;
+	//	console.log(button.textContent);
+	//
+	//	let divs = $('div[id^="content-"]').hide(),
+	//	    i = 0;
+	//	let toStop = false;
+	//	const action = {
+	//		Spin: () => {
+	//			console.log(button.textContent);
+	//			button.textContent = 'Stop';
+	//			function cycle() {
+	//				if(toStop === false) {
+	//					console.log(toStop);
+	//					divs.eq(i).show(0)
+	//						.delay(200)
+	//						.hide(0, cycle);
+	//
+	//					i = ++i % divs.length;
+	//				}else{
+	//
+	//				}
+	//
+	//			}
+	//
+	//			cycle();
+	//			console.log(toStop);
+	//		},
+	//		Stop: () =>{
+	//			console.log(button.textContent);
+	//			button.textContent = 'Spin';
+	//			toStop = true;
+	//			console.log(toStop);
+	//		}
+	//	};
+	//	action[button.textContent]();
+	//});
 
 });
