@@ -51,67 +51,67 @@
     text-align: center; }
 
 .color-box {
-  margin: 10% 25% 0% 25%; }
+  margin: 10% 30% 0% 30%; }
 
 #content-1, #content-2, #content-3, #content-4, #content-5, #content-6, #content-8 {
   position: absolute; }
 
 #content-1 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: red; }
   #content-1 h1 {
     text-align: center;
-    padding-top: 75px; }
+    padding-top: 50px; }
 
 #content-2 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: blue; }
   #content-2 h1 {
     text-align: center;
-    padding-top: 75px; }
+    padding-top: 50px; }
 
 #content-3 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: green; }
   #content-3 h1 {
     text-align: center;
-    padding-top: 75px; }
+    padding-top: 50px; }
 
 #content-4 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: yellow; }
   #content-4 h1 {
     text-align: center;
-    padding-top: 75px; }
+    padding-top: 50px; }
 
 #content-5 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: black;
   color: white; }
   #content-5 h1 {
     text-align: center;
-    padding-top: 75px; }
+    padding-top: 50px; }
 
 #content-6 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: grey; }
   #content-6 h1 {
     text-align: center;
-    padding-top: 75px; }
+    padding-top: 50px; }
 
 #content-7 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: white; }
   #content-7 h1 {
     text-align: center;
-    padding-top: 75px; }
+    padding-top: 50px; }
 
 .random {
   border: 1px solid black;
@@ -142,7 +142,7 @@
 
 .board {
   background-image: url("../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png");
-  height: 100px;
+  height: 150px;
   background-position: center center;
   background-repeat: no-repeat;
   overflow: hidden;
@@ -176,14 +176,14 @@
 .keyboard {
   background: #3C485E;
   height: 500px;
-  padding: 0px 0px 0px 20px; }
+  padding: 25px 10px 0px 10px; }
 
 .keyboard-box {
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   border: 1px solid white;
   border-radius: .5em;
-  margin: 2%;
+  margin: .5%;
   background: none;
   float: left; }
   .keyboard-box h1 {
@@ -193,11 +193,11 @@
 
 .used {
   background: grey;
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   border: 1px solid white;
   border-radius: .5em;
-  margin: 2%;
+  margin: .5%;
   float: left; }
   .used h1 {
     margin: 0 auto;
