@@ -1,12 +1,14 @@
 <!DOCTYPE html>
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
   <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <title>Wheel-o-Phrases</title>
-    <link href="../static/css/normalize.css" rel="stylesheet">
-    <link href="../static/css/style.css" rel="stylesheet">
-    <link href="fonts/chalkduster.TTF" rel="stylesheet">
+    <link th:href="@{/css/normalize.css}" href="../static/css/normalize.css" rel="stylesheet"/>
+    <link th:href="@{/css/style.css}" href="../static/css/style.css" rel="stylesheet"/>
+    <link href="fonts/chalkduster.TTF" rel="stylesheet"/>
+
   </head>
   <body>
 
@@ -18,73 +20,63 @@
     </div>
 
     <div class="board">
-      <div class="board-box"><h1>R</h1></div>
-      <div class="board-box"><h1>-</h1></div>
-      <div class="board-box"><h1>B</h1></div>
-      <div class="board-box"><h1>B</h1></div>
-      <div class="board-box"><h1>-</h1></div>
-      <div class="board-box"><h1>R</h1></div>
-      <div class="fill"><h1></h1></div>
-      <div class="board-box"><h1>D</h1></div>
-      <div class="board-box"><h1>-</h1></div>
-      <div class="board-box"><h1>C</h1></div>
-      <div class="board-box"><h1>K</h1></div>
-      <div class="board-box"><h1>-</h1></div>
-      <div class="board-box"><h1>-</h1></div>
-      <div class="board-box"><h1>-</h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
-      <div class="board-box"><h1></h1></div>
+        <input type="hidden" th:value="${phraseInfo.id}" id="phrase-id"/>
+        <div class="board-box" th:each="letter: ${phraseChar}"><h1 class="letter" th:text="${letter.phraseChar}">R</h1></div>
     </div>
 
     <div class="keyboard">
       <div class="">
-        <div class="keyboard-box"><h1>A</h1></div>
-        <div class="keyboard-box"><h1>B</h1></div>
-        <div class="keyboard-box"><h1>C</h1></div>
-        <div class="keyboard-box"><h1>D</h1></div>
-        <div class="keyboard-box"><h1>E</h1></div>
-        <div class="keyboard-box"><h1>F</h1></div>
-        <div class="keyboard-box"><h1>G</h1></div>
-        <div class="keyboard-box"><h1>H</h1></div>
-        <div class="keyboard-box"><h1>I</h1></div>
-        <div class="keyboard-box"><h1>J</h1></div>
-        <div class="keyboard-box"><h1>K</h1></div>
-        <div class="keyboard-box"><h1>L</h1></div>
-        <div class="keyboard-box"><h1>M</h1></div>
-        <div class="keyboard-box"><h1>N</h1></div>
-        <div class="keyboard-box"><h1>O</h1></div>
-        <div class="keyboard-box"><h1>P</h1></div>
-        <div class="keyboard-box"><h1>Q</h1></div>
-        <div class="keyboard-box"><h1>R</h1></div>
-        <div class="keyboard-box"><h1>S</h1></div>
-        <div class="keyboard-box"><h1>T</h1></div>
-        <div class="keyboard-box"><h1>U</h1></div>
-        <div class="keyboard-box"><h1>V</h1></div>
-        <div class="keyboard-box"><h1>W</h1></div>
-        <div class="keyboard-box"><h1>X</h1></div>
+        <button class="keyboard-box"><h1>A</h1></button>
+        <button class="keyboard-box"><h1>B</h1></button>
+        <button class="keyboard-box"><h1>C</h1></button>
+        <button class="keyboard-box"><h1>D</h1></button>
+        <button class="keyboard-box"><h1>E</h1></button>
+        <button class="keyboard-box"><h1>F</h1></button>
+        <button class="keyboard-box"><h1>G</h1></button>
+        <button class="keyboard-box"><h1>H</h1></button>
+        <button class="keyboard-box"><h1>I</h1></button>
+        <button class="keyboard-box"><h1>J</h1></button>
+        <button class="keyboard-box"><h1>K</h1></button>
+        <button class="keyboard-box"><h1>L</h1></button>
+        <button class="keyboard-box"><h1>M</h1></button>
+        <button class="keyboard-box"><h1>N</h1></button>
+        <button class="keyboard-box"><h1>O</h1></button>
+        <button class="keyboard-box"><h1>P</h1></button>
+        <button class="keyboard-box"><h1>Q</h1></button>
+        <button class="keyboard-box"><h1>R</h1></button>
+        <button class="keyboard-box"><h1>S</h1></button>
+        <button class="keyboard-box"><h1>T</h1></button>
+        <button class="keyboard-box"><h1>U</h1></button>
+        <button class="keyboard-box"><h1>V</h1></button>
+        <button class="keyboard-box"><h1>W</h1></button>
+        <button class="keyboard-box"><h1>X</h1></button>
         <div class="keyboard-box" style="border:none"><h1></h1></div>
         <div class="keyboard-box" style="border:none"><h1></h1></div>
-        <div class="keyboard-box"><h1>Y</h1></div>
-        <div class="keyboard-box"><h1>Z</h1></div>
+        <button class="keyboard-box"><h1>Y</h1></button>
+        <button class="keyboard-box"><h1>Z</h1></button>
         <div class="keyboard-box" style="border:none"><h1></h1></div>
         <div class="keyboard-box" style="border:none"><h1></h1></div>
       </div>
     </div>
+    <div id="root-container">
+      <div class="container">
+        <div class="color-box">
+          <div id="content-1"><h1>$100</h1></div>
+          <div id="content-2"><h1>$200</h1></div>
+          <div id="content-3"><h1>$300</h1></div>
+          <div id="content-4"><h1>400</h1></div>
+          <div id="content-5"><h1>Bankrupt</h1></div>
+          <div id="content-6"><h1>$500</h1></div>
+          <div id="content-7"><h1>$600</h1></div>
+        </div>
 
+      </div>
+    <button class="random" id="rand">Spin</button>
+    </div>
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-    <script src="../static/js/script.js"></script>
+
+    <script th:src="@{/js/script.js}" src="../static/js/script.js"></script>
+
   </body>
 </html>
