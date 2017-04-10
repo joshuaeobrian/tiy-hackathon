@@ -118,9 +118,9 @@ public class GameService {
     //     this.repository = new GameRepository("jdbc:postgresql://localhost:5432/wheelophases");
     // }
 
-    private void logGame() throws Exception {
-        this.id = repository.startGame(phrase);
-    }
+//    private void logGame() throws Exception {
+//        this.id = repository.startGame(phrase);
+//    }
 
     public Integer getId() {
         return id;

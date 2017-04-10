@@ -11,7 +11,7 @@ import org.springframework.web.bind.annotation.*;
  * Created by josh on 4/8/17.
  */
 @RestController
-public class ValidatorApi {
+public class  ValidatorApi {
 	@Autowired
 	PhraseRepository repository;
 
