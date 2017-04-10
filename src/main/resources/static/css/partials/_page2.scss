@@ -1,0 +1,242 @@
+@font-face {
+  font-family: chalkduster;
+  src:url('../fonts/src/main/resources/static/css/fonts/Chalkduster/Chalkduster.ttf');
+}
+* {
+  font-family: 'chalkduster';
+}
+
+.title-bar {
+  overflow:hidden;
+  background:#3C485E;
+  color:white;
+  text-align: center;
+}
+.player-bar {
+  background:#ECDCB0;
+  overflow:hidden;
+  text-align: center;
+  h1 {
+    line-height: .5;
+  }
+}
+.board {
+  background-image: url('../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png');
+  height: 100px;
+  background-position:center center;
+  background-repeat: no-repeat;
+  overflow:hidden;
+  padding: 25px 15px 25px 15px;
+}
+.board-box {
+  height:40px;
+  width:40px;
+  border:1px solid white;
+  border-radius: .5em;
+  margin:1%;
+  float:left;
+  h1 {
+    margin:0 auto;
+    color:white;
+    text-align: center;
+  }
+}
+.fill {
+  background:white;
+  height:40px;
+  width:40px;
+  border:1px solid white;
+  border-radius: .5em;
+  margin:1%;
+  float:left;
+  h1 {
+    margin:0 auto;
+    color:white;
+    text-align: center;
+  }
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9b1639a9daf6fae1b9e2cceb6e2918aa970a8563
+.container {
+  background:#3C485E;
+  overflow:hidden;
+  height:350px;
+}
+.color-changer {
+  background:white;
+  height:150px;
+  width:150px;
+  margin:auto;
+  border-radius:2em;
+  box-shadow: 10px 10px 5px #888888;
+  h1 {
+    text-align: center;
+    padding:50px 25px 50px 25px;
+  }
+}
+<<<<<<< HEAD
+=======
+.color-box {
+  margin: 10% 30% 0% 30%;
+}
+#content-1, #content-2, #content-3, #content-4, #content-5, #content-6, #content-8 {
+  position:absolute;
+}
+#content-1 {
+  height:150px;
+  width:150px;
+  background:red;
+  h1 {
+    text-align: center;
+    padding-top:50px;
+  }
+}
+#content-2 {
+  height:150px;
+  width:150px;
+  background:blue;
+  h1 {
+    text-align: center;
+    padding-top:50px;
+  }
+}
+#content-3 {
+  height:150px;
+  width:150px;
+  background:green;
+  h1 {
+    text-align: center;
+    padding-top:50px;
+  }
+}
+#content-4 {
+  height:150px;
+  width:150px;
+  background:yellow;
+  h1 {
+    text-align: center;
+    padding-top:50px;
+  }
+}
+#content-5 {
+  height:150px;
+  width:150px;
+  background:black;
+  color:white;
+  h1 {
+    text-align: center;
+    padding-top:50px;
+  }
+}
+#content-6 {
+  height:150px;
+  width:150px;
+  background:grey;
+  h1 {
+    text-align: center;
+    padding-top:50px;
+  }
+}
+#content-7 {
+  height:150px;
+  width:150px;
+  background:white;
+  h1 {
+    text-align: center;
+    padding-top:50px;
+  }
+}
+
+// .container {
+//   background:#3C485E;
+//   overflow:hidden;
+//   height:350px;
+// }
+// .color-changer {
+//   background:white;
+//   height:150px;
+//   width:150px;
+//   margin:auto;
+//   border-radius:2em;
+//   box-shadow: 10px 10px 5px #888888;
+//   h1 {
+//     text-align: center;
+//     padding:50px 25px 50px 25px;
+//   }
+// }
+>>>>>>> f754515a2db670b0b81cfb82454d696c398317f7
+=======
+>>>>>>> 9b1639a9daf6fae1b9e2cceb6e2918aa970a8563
+.random {
+  border: 1px solid black;
+  border-radius:2em;
+  margin:0 25% 0 25%;
+  height:40px;
+  width:200px;
+  background:#ECDCB0;
+}
+<<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 9b1639a9daf6fae1b9e2cceb6e2918aa970a8563
+// .wheel {
+//   .slice1, .slice2, .slice3, .slice4, .slice5, .slice6, .slice7, .slice8 {
+//     float:left;
+//     border:1px solid black;
+//   }
+//   .slice1 {
+//     height:100px;
+//     width:100px;
+//     background:red;
+//   }
+//   .slice2 {
+//     height:100px;
+//     width:100px;
+//     background:blue;
+//   }
+//   .slice3 {
+//     height:100px;
+//     width:100px;
+//     background:green;
+//   }
+//   .slice4 {
+//     height:100px;
+//     width:100px;
+//     background:yellow;
+//   }
+//   .slice5 {
+//     height:100px;
+//     width:100px;
+//     background:red;
+//   }
+//   .slice6 {
+//     height:100px;
+//     width:100px;
+//     background:blue;
+//   }
+//   .slice7 {
+//     height:100px;
+//     width:100px;
+//     background:green;
+//   }
+//   .slice8 {
+//     height:100px;
+//     width:100px;
+//     background:black;
+//     color:white;
+//   }
+// }
+// button {
+//   height:30px;
+//   width:100px;
+//   border:1px solid black;
+//   border-radius:1em;
+//   margin:2%;
+// }
+<<<<<<< HEAD
+=======
+>>>>>>> f754515a2db670b0b81cfb82454d696c398317f7
+=======
+>>>>>>> 9b1639a9daf6fae1b9e2cceb6e2918aa970a8563

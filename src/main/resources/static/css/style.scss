@@ -1,1 +1,118 @@
+@import "partials/page2";
 
+@font-face {
+  font-family: chalkduster;
+  src:url('../fonts/src/main/resources/static/css/fonts/Chalkduster/Chalkduster.ttf');
+}
+* {
+  font-family: 'chalkduster';
+}
+
+.title-bar {
+  overflow:hidden;
+  background:#3C485E;
+  color:white;
+  text-align: center;
+}
+.player-bar {
+  background:#ECDCB0;
+  overflow:hidden;
+  text-align: center;
+  h1 {
+    line-height: .5;
+  }
+}
+.board {
+  background-image: url('../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png');
+  height: 150px;
+  background-position:center center;
+  background-repeat: no-repeat;
+  overflow:hidden;
+  padding: 25px 15px 25px 15px;
+}
+.board-box {
+  height:40px;
+  width:40px;
+  border:1px solid white;
+  border-radius: .5em;
+  margin:1%;
+  float:left;
+  h1 {
+    margin:0 auto;
+    color:white;
+    text-align: center;
+  }
+}
+.fill {
+  background:white;
+  height:40px;
+  width:40px;
+  border:1px solid white;
+  border-radius: .5em;
+  margin:1%;
+  float:left;
+  h1 {
+    margin:0 auto;
+    color:white;
+    text-align: center;
+  }
+}
+
+.keyboard {
+  background:#3C485E;
+  height:500px;
+  padding:25px 10px 0px 10px;
+}
+.keyboard-box {
+  height:55px;
+  width:55px;
+  border:1px solid white;
+  border-radius: .5em;
+  margin:.5%;
+  background: none;
+  h1 {
+    margin:0 auto;
+    color:white;
+    text-align: center;
+  }
+  float:left;
+}
+
+.used {
+  background: grey;
+  height:55px;
+  width:55px;
+  border:1px solid white;
+  border-radius: .5em;
+  margin:.5%;
+  h1 {
+    margin:0 auto;
+    color:lightgrey;
+    text-align: center;
+  }
+  float:left;
+}
+
+@media (min-width:769px) {
+  body {
+    margin:0% 36% 0% 36%;
+  }
+  .board {
+    background-image: url('../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png');
+    height: 100px;
+    background-position:center center;
+    background-repeat: no-repeat;
+    overflow:hidden;
+    padding: 25px 25px 25px 25px;
+  }
+}
+// @media (min-width:376px) {
+//   body {
+//     margin:10% 25% 0% 25%;
+//   }
+//   .keyboard {
+//     background:#3C485E;
+//     height:350px;
+//     padding:0px 0px 0px 20px;
+//   }
+// }
