@@ -24,7 +24,7 @@
 }
 .board {
   background-image: url('../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png');
-  height: 100px;
+  height: 150px;
   background-position:center center;
   background-repeat: no-repeat;
   overflow:hidden;
@@ -61,15 +61,15 @@
 .keyboard {
   background:#3C485E;
   height:500px;
-  padding:0px 0px 0px 20px;
+  padding:25px 10px 0px 10px;
 }
 .keyboard-box {
-  height:40px;
-  width:40px;
+  height:55px;
+  width:55px;
   border:1px solid white;
   border-radius: .5em;
-  margin:2%;
-
+  margin:.5%;
+  background: none;
   h1 {
     margin:0 auto;
     color:white;
@@ -80,11 +80,11 @@
 
 .used {
   background: grey;
-  height:40px;
-  width:40px;
+  height:55px;
+  width:55px;
   border:1px solid white;
   border-radius: .5em;
-  margin:2%;
+  margin:.5%;
   h1 {
     margin:0 auto;
     color:lightgrey;

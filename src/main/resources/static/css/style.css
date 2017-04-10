@@ -14,8 +14,8 @@
   background: #ECDCB0;
   overflow: hidden;
   text-align: center; }
-  .player-bar h1 {
-    line-height: .5; }
+.player-bar h1 {
+  line-height: .5; }
 
 .board {
   background-image: url("../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png");
@@ -25,6 +25,10 @@
   overflow: hidden;
   padding: 25px 15px 25px 15px; }
 
+.letter{
+  display:none;
+  }
+
 .board-box {
   height: 40px;
   width: 40px;
@@ -32,18 +36,11 @@
   border-radius: .5em;
   margin: 1%;
   float: left; }
-  .board-box h1 {
-    margin: 0 auto;
-    color: white;
-    text-align: center; }
+.board-box h1 {
+  margin: 0 auto;
+  color: white;
+  text-align: center; }
 
-.letter{
-  display: none;
-  }
-/*.show{*/
-  /*display: block;*/
-  /*}*/
-  
 .fill {
   background: white;
   height: 40px;
@@ -52,91 +49,73 @@
   border-radius: .5em;
   margin: 1%;
   float: left; }
-  .fill h1 {
-    margin: 0 auto;
-    color: white;
-    text-align: center; }
-
-
-.container {
-  background: #3C485E;
-  overflow: hidden;
-  height: 350px; }
-
-.color-changer {
-  background: white;
-  height: 150px;
-  width: 150px;
-  margin: auto;
-  border-radius: 2em;
-  box-shadow: 10px 10px 5px #888888; }
-  .color-changer h1 {
-    text-align: center;
-    padding: 50px 25px 50px 25px; }
+.fill h1 {
+  margin: 0 auto;
+  color: white;
+  text-align: center; }
 
 .color-box {
-  margin: 10% 25% 0% 25%; }
+  margin: 10% 30% 0% 30%; }
 
 #content-1, #content-2, #content-3, #content-4, #content-5, #content-6, #content-8 {
   position: absolute; }
 
 #content-1 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: red; }
-  #content-1 h1 {
-    text-align: center;
-    padding-top: 75px; }
+#content-1 h1 {
+  text-align: center;
+  padding-top: 50px; }
 
 #content-2 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: blue; }
-  #content-2 h1 {
-    text-align: center;
-    padding-top: 75px; }
+#content-2 h1 {
+  text-align: center;
+  padding-top: 50px; }
 
 #content-3 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: green; }
-  #content-3 h1 {
-    text-align: center;
-    padding-top: 75px; }
+#content-3 h1 {
+  text-align: center;
+  padding-top: 50px; }
 
 #content-4 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: yellow; }
-  #content-4 h1 {
-    text-align: center;
-    padding-top: 75px; }
+#content-4 h1 {
+  text-align: center;
+  padding-top: 50px; }
 
 #content-5 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: black;
   color: white; }
-  #content-5 h1 {
-    text-align: center;
-    padding-top: 75px; }
+#content-5 h1 {
+  text-align: center;
+  padding-top: 50px; }
 
 #content-6 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: grey; }
-  #content-6 h1 {
-    text-align: center;
-    padding-top: 75px; }
+#content-6 h1 {
+  text-align: center;
+  padding-top: 50px; }
 
 #content-7 {
-  height: 200px;
-  width: 200px;
+  height: 150px;
+  width: 150px;
   background: white; }
-  #content-7 h1 {
-    text-align: center;
-    padding-top: 75px; }
-
+#content-7 h1 {
+  text-align: center;
+  padding-top: 50px; }
 
 .random {
   border: 1px solid black;
@@ -162,8 +141,8 @@
   background: #ECDCB0;
   overflow: hidden;
   text-align: center; }
-  .player-bar h1 {
-    line-height: .5; }
+.player-bar h1 {
+  line-height: .5; }
 
 .board {
   background-image: url("../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png");
@@ -180,10 +159,10 @@
   border-radius: .5em;
   margin: 1%;
   float: left; }
-  .board-box h1 {
-    margin: 0 auto;
-    color: white;
-    text-align: center; }
+.board-box h1 {
+  margin: 0 auto;
+  color: white;
+  text-align: center; }
 
 .fill {
   background: white;
@@ -193,45 +172,46 @@
   border-radius: .5em;
   margin: 1%;
   float: left; }
-  .fill h1 {
-    margin: 0 auto;
-    color: white;
-    text-align: center; }
+.fill h1 {
+  margin: 0 auto;
+  color: white;
+  text-align: center; }
 
 .keyboard {
   background: #3C485E;
   height: 500px;
-  padding: 0px 0px 0px 20px; }
+  padding: 25px 10px 0px 10px; }
 
 .keyboard-box {
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   border: 1px solid white;
   border-radius: .5em;
-  margin: 2%;
+  margin: .5%;
+  background: none;
   float: left; }
-  .keyboard-box h1 {
-    margin: 0 auto;
-    color: white;
-    text-align: center; }
+.keyboard-box h1 {
+  margin: 0 auto;
+  color: white;
+  text-align: center; }
 
 .used {
   background: grey;
-  height: 40px;
-  width: 40px;
+  height: 55px;
+  width: 55px;
   border: 1px solid white;
   border-radius: .5em;
-  margin: 2%;
+  margin: .5%;
   float: left; }
-  .used h1 {
-    margin: 0 auto;
-    color: lightgrey;
-    text-align: center; }
+.used h1 {
+  margin: 0 auto;
+  color: lightgrey;
+  text-align: center; }
 
 @media (min-width: 769px) {
   body {
     margin: 0% 36% 0% 36%; }
-
+  
   .board {
     background-image: url("../images/chalkboard-clip-art-at-clker-com-vector-clip-art-online-royalty-ioRhVb-clipart.png");
     height: 100px;
